@@ -1,0 +1,29 @@
+.blog {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .blog h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .blog-post {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+  }
+  
+  .blog-post h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .blog-post p {
+    font-size: 1.2em;
+    color: #666;
+  }
+  
+  

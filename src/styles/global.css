@@ -1,0 +1,99 @@
+/* Global styles for all pages */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  header, footer {
+    background: #ffffff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .hero {
+    padding: 60px 20px;
+    background: #007bff;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+    margin: 20px 0;
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    background: #ff6600;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .overview {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .service, .testimonials, .form {
+    margin: 20px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .overview {
+      flex-direction: column;
+    }
+  
+    .service, .testimonials, .form {
+      margin: 10px 0;
+    }
+  
+    .hero h1 {
+      font-size: 2.5em;
+    }
+  
+    .hero p {
+      font-size: 1em;
+    }
+  
+    .cta-button {
+      padding: 8px 16px;
+      font-size: 0.9em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero h1 {
+      font-size: 2em;
+    }
+  
+    .hero p {
+      font-size: 0.9em;
+    }
+  
+    .cta-button {
+      padding: 8px 16px;
+      font-size: 0.8em;
+    }
+  
+    .contact-info p {
+      font-size: 0.8em;
+    }
+  }
+  

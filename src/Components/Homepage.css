@@ -1,0 +1,313 @@
+/* Global Styles */
+.homepage {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background: #e8f5e9; /* Light green background for the whole page */
+  padding: 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 0;
+  background: #e8f5e9; /* Match hero background with the whole page */
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  color: #4a4a4a;
+}
+
+.hero p {
+  font-size: 1.2em;
+  color: #777;
+}
+
+.banner {
+  background: #e8f5e9; /* Consistent light green background for banner */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.banner .block {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.banner h1 {
+  font-size: 2.5em;
+  color: #00796b; /* Darker green for contrast */
+}
+
+.banner p {
+  font-size: 1.2em;
+  color: #004d40; /* Darker green text */
+}
+
+.btn-main-2 {
+  background-color: #00796b;
+  color: #fff;
+}
+
+.btn-main-2:hover {
+  background-color: #004d40;
+}
+
+.features {
+  padding: 40px 20px;
+  background: #e8f5e9; /* Light green background for consistency */
+}
+
+.feature-block {
+  display: flex;
+  justify-content: space-between; /* Space between cards */
+  flex-wrap: nowrap; /* Prevent wrapping */
+  overflow-x: auto; /* Allow horizontal scrolling if needed */
+}
+
+.feature-item {
+  background: #ffffff; /* White background for feature items */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Floating effect */
+  padding: 20px;
+  flex: 1 1 calc(33.333% - 20px); /* Three cards in a row, with space between */
+  margin: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.feature-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1); /* Light shadow effect */
+  border-radius: 8px;
+  z-index: -1;
+}
+
+.feature-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-icon {
+  font-size: 40px; /* Larger icons */
+  color: #00796b;
+  margin-bottom: 15px;
+}
+
+.feature-item h4 {
+  font-size: 1.8em;
+  color: #00796b;
+  margin: 10px 0;
+}
+
+.feature-item p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.btn-main {
+  background-color: #00796b;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.btn-main:hover {
+  background-color: #004d40;
+}
+
+.w-hours {
+  list-style: none;
+  padding: 0;
+}
+
+.w-hours li {
+  font-size: 1em;
+  color: #555;
+}
+
+.cta-section {
+  background: #e8f5e9; /* Light green background for CTA section */
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.counter-stat {
+  background: #ffffff; /* White background for counter stats */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+.counter-stat i {
+  font-size: 2em;
+  color: #00796b;
+}
+
+.counter-stat .h3 {
+  font-size: 2em;
+  color: #00796b;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+  background: #e8f5e9; /* Light green background for footer */
+}
+
+/* Form Section Styling */
+.appointment-form-section {
+  background: #ffffff; /* White background for the form section */
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.appointment-form-section .title-color {
+  color: #00796b; /* Darker green for the title */
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.appointment-form .form-control {
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  padding: 15px;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.appointment-form .form-control:focus {
+  border-color: #00796b; /* Highlight border color on focus */
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 121, 107, 0.3); /* Subtle shadow on focus */
+}
+
+.appointment-form .form-group-2 textarea {
+  resize: vertical; /* Allow vertical resize only */
+  min-height: 100px; /* Minimum height for textarea */
+}
+
+/* Button Styling */
+.appointment-form .btn-main {
+  background: #00796b;
+  color: #fff;
+  border-radius: 25px;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+
+.appointment-form .btn-main i {
+  margin-left: 10px;
+}
+
+.appointment-form .btn-main:hover {
+  background: #004d40; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.appointment-form .btn-main:focus {
+  outline: none;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+  .feature-item {
+    flex: 1 1 calc(50% - 20px); /* Two cards in a row for medium screens */
+  }
+
+  .counter-stat {
+    width: 45%;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-item {
+    width: 80%;
+    margin: 10px 0; /* Stack cards vertically */
+  }
+
+  .cta-section .counter-stat {
+    width: 80%;
+  }
+
+  .appointment-form-section {
+    padding: 30px 15px;
+  }
+
+  .appointment-form .form-control {
+    padding: 12px;
+  }
+
+  .appointment-form .btn-main {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.5em;
+  }
+
+  .hero p {
+    font-size: 0.9em;
+  }
+
+  .feature-item {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .cta-section .counter-stat {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .appointment-form .form-control {
+    padding: 10px;
+  }
+
+  .appointment-form .btn-main {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+}

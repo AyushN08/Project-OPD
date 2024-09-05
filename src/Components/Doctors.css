@@ -1,0 +1,28 @@
+.doctors {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .doctors h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .doctor-item {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+  }
+  
+  .doctor-item h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .doctor-item p {
+    font-size: 1.2em;
+    color: #666;
+  }
+  

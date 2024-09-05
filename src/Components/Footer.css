@@ -1,0 +1,84 @@
+/* Footer styles */
+.footer {
+    background: #1a1a1a; /* Dark background for a modern look */
+    color: #000000; /* Light text color for contrast */
+    padding: 40px 20px;
+    border-top: 2px solid #333; /* Thicker border for a more defined look */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-family: 'Arial', sans-serif; /* Modern, clean font */
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Center the content and limit the width */
+    margin: 0 auto; /* Center align the footer content */
+  }
+  
+  .footer-left,
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-left {
+    align-items: flex-start;
+  }
+  
+  .terms {
+    margin-bottom: 5px;
+    font-size: 17px;
+    color: #000000; /* Gold color for the terms for emphasis */
+  }
+  
+  .copyright {
+    font-size: 17px;
+    color: #000000; /* Slightly lighter color for the copyright text */
+  }
+  
+  .footer-right {
+    align-items: flex-end;
+  }
+  
+  .contact-info {
+    margin-bottom: 20px;
+    text-align: right;
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+    font-size: 0.875em;
+  }
+  
+  .contact-info a {
+    color: #000000; /* Gold color for links for a touch of elegance */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-media {
+    display: flex;
+    align-items: center;
+    margin-top: 12px; /* Space above the social media icons */
+  }
+  
+  .social-media a {
+    color: #000000; /* Gold color for social media icons */
+    margin: 0 15px;
+    font-size: 1.5em; /* Larger size for better visibility */
+    transition: color 0.3s;
+  }
+  
+  .social-media a:hover {
+    color: #e0e0e0; /* Light color on hover */
+  }
+  

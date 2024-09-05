@@ -1,0 +1,28 @@
+.department {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .department h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .department-item {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+  }
+  
+  .department-item h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .department-item p {
+    font-size: 1.2em;
+    color: #666;
+  }
+  

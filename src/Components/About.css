@@ -1,0 +1,140 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background: #e8f5e9;
+    transition: background-color 0.3s ease;
+}
+
+.about {
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    background: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.intro, .team, .history, .contact {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #e8f5e9;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.intro h1, .team h2, .history h2, .contact h2 {
+    font-size: 2.5em;
+    color: #222;
+    transition: color 0.3s ease;
+}
+
+.intro p, .team p, .history p, .contact p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.intro {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: #fff;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.team {
+    background: #e0f7fa;
+}
+
+.team h2 {
+    color: #00796b;
+}
+
+.team-member {
+    margin: 10px 0;
+}
+
+.team-member h3 {
+    font-size: 1.5em;
+    margin: 0;
+    color: #00796b;
+}
+
+.team-member p {
+    font-size: 1.2em;
+    color: #004d40;
+}
+
+.history {
+    background: #f0f4c3;
+    text-align: center;
+}
+
+.history h2 {
+    color: #33691e;
+}
+
+.contact {
+    background: #e3f2fd;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #0277bd;
+}
+
+.contact a {
+    color: #0288d1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact a:hover {
+    color: #01579b;
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .intro, .team, .history, .contact {
+        padding: 15px;
+    }
+
+    .intro h1, .team h2, .history h2, .contact h2 {
+        font-size: 2em;
+    }
+
+    .intro p, .team p, .history p, .contact p {
+        font-size: 1em;
+    }
+
+    .team-member h3 {
+        font-size: 1.2em;
+    }
+
+    .team-member p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro h1 {
+        font-size: 1.8em;
+    }
+
+    .intro p, .team p, .history p, .contact p {
+        font-size: 0.9em;
+    }
+
+    .team-member h3 {
+        font-size: 1em;
+    }
+
+    .team-member p {
+        font-size: 0.9em;
+    }
+}
