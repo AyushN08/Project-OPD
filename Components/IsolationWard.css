@@ -1,0 +1,82 @@
+/* General container styling */
+.isolation-ward-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f7f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 800px; /* Set a max-width for responsiveness */
+}
+
+/* Heading styles */
+h1, h2 {
+  text-align: center;
+  color: #1f2d3d;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 20px;
+}
+
+/* Key features column layout */
+.key-features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Individual feature styling */
+.feature {
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%; /* Take up full width in the container */
+  max-width: 600px; /* Set max-width to keep it neat */
+}
+
+.feature h3 {
+  color: #2c3e50;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  font-family: 'Verdana', sans-serif;
+}
+
+.feature p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  color: #4f5b66;
+}
+
+/* Button styling */
+.feature button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.feature button:hover {
+  background-color: #0056b3;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .isolation-ward-container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .feature {
+    padding: 10px 15px;
+  }
+
+  h1, h2 {
+    font-size: 1.5em;
+  }
+}

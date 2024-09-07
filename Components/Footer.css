@@ -1,0 +1,87 @@
+/* Footer styles */
+.footer {
+    background: #222; /* Darker background for a more professional look */
+    color: #f5f5f5; /* Light text color for high contrast */
+    padding: 40px 20px;
+    border-top: 2px solid #444; /* Subtle border to define the footer */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.15); /* Slightly more pronounced shadow for depth */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Cleaner, modern font */
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Center the content and limit the width */
+    margin: 0 auto; /* Center align the footer content */
+  }
+  
+  .footer-left,
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-left {
+    align-items: flex-start;
+    color: #000000; /* Ensure text color is light for readability */
+  }
+  
+  .terms {
+    margin-bottom: 8px;
+    font-size: 16px; /* Slightly smaller for a more refined look */
+    color: #000000; /* Lighter color for a subtle appearance */
+  }
+  
+  .copyright {
+    font-size: 14px; /* Smaller size for less emphasis */
+    color: #000000; /* Lighter color for less contrast */
+  }
+  
+  .footer-right {
+    align-items: flex-end;
+    color: #000000; /* Ensure text color is consistent */
+  }
+  
+  .contact-info {
+    margin-bottom: 20px;
+    text-align: right;
+  }
+  
+  .contact-info p {
+    margin: 4px 0;
+    font-size: 14px; /* Standard size for better readability */
+  }
+  
+  .contact-info a {
+    color: #000000; /* Light color for consistency */
+    text-decoration: none;
+    font-weight: normal; /* Normal weight for a professional look */
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+    color: #000000; /* Slightly darker color on hover for better visibility */
+  }
+  
+  .social-media {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+  }
+  
+  .social-media a {
+    color: #000000; /* Light color for consistency */
+    margin: 0 12px; /* Slightly smaller spacing for better alignment */
+    font-size: 1.4em; /* Slightly smaller size for a more refined look */
+    transition: color 0.3s;
+  }
+  
+  .social-media a:hover {
+    color: #000000; /* Slightly lighter color on hover */
+  }
+  

@@ -1,0 +1,554 @@
+/* Global Styles */
+.homepage {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background: #e8f5e9; /* Light green background for the whole page */
+  padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #a0d6a0, #b9e4c9);  /* Light green gradient background */
+  color: #ffffff;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.3); /* Light white overlay for better text visibility */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Space between buttons */
+}
+
+.btn-main {
+  background: linear-gradient(135deg, #4db6ac, #b2dfdb); /* Light green gradient button */
+  color: #fff;
+  border-radius: 25px;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-main:hover {
+  background: linear-gradient(135deg, #b2dfdb, #4db6ac); /* Slightly darker gradient on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.btn-secondary {
+  background: #ffffff;
+  color: #4db6ac;
+  border-radius: 25px;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid #4db6ac;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: #4db6ac;
+  color: #ffffff;
+}
+
+/* Banner Section */
+.banner {
+  background: #e8f5e9; /* Consistent light green background for banner */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.banner .block {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.banner h1 {
+  font-size: 2.5em;
+  color: #00796b; /* Darker green for contrast */
+}
+
+.banner p {
+  font-size: 1.2em;
+  color: #004d40; /* Darker green text */
+}
+
+.btn-main-2 {
+  background-color: #00796b;
+  color: #fff;
+}
+
+.btn-main-2:hover {
+  background-color: #004d40;
+}
+
+/* Features Section */
+.features {
+  padding: 40px 20px;
+  background: #e8f5e9; /* Light green background for consistency */
+}
+
+.feature-block {
+  display: flex;
+  justify-content: space-between; /* Space between cards */
+  flex-wrap: nowrap; /* Prevent wrapping */
+  overflow-x: auto; /* Allow horizontal scrolling if needed */
+}
+
+.feature-item {
+  background: #ffffff; /* White background for feature items */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Floating effect */
+  padding: 20px;
+  flex: 1 1 calc(33.333% - 20px); /* Three cards in a row, with space between */
+  margin: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+.feature-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1); /* Light shadow effect */
+  border-radius: 8px;
+  z-index: -1;
+}
+
+.feature-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-icon {
+  font-size: 40px; /* Larger icons */
+  color: #00796b;
+  margin-bottom: 15px;
+}
+
+.feature-item h4 {
+  font-size: 1.8em;
+  color: #00796b;
+  margin: 10px 0;
+}
+
+.feature-item p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.btn-main {
+  background-color: #00796b;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.btn-main:hover {
+  background-color: #004d40;
+}
+
+/* CTA Section */
+.cta-section {
+  background: #e8f5e9; /* Light green background for CTA section */
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.counter-stat {
+  background: #ffffff; /* White background for counter stats */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+.counter-stat i {
+  font-size: 2em;
+  color: #00796b;
+}
+
+.counter-stat .h3 {
+  font-size: 2em;
+  color: #00796b;
+}
+
+.bed-availability.enhanced {
+  padding: 60px 20px;
+  background: #e0f7fa;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.bed-availability.enhanced::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 150%;
+  height: 100%;
+  background: rgba(0, 188, 212, 0.2);
+  transform: translateX(-50%);
+  z-index: 1;
+  border-radius: 50%;
+  animation: wave 10s infinite;
+}
+
+.bed-availability-content {
+  position: relative;
+  z-index: 2;
+}
+
+.section-title {
+  font-size: 2.5em;
+  color: #00796b;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.section-description {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.btn-main {
+  background: #00796b;
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 1.1em;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn-main:hover {
+  background: #004d40;
+  transform: scale(1.05);
+}
+
+/* Appointment Form Section Title */
+/* Updated Appointment Form Section */
+/* Container styling */
+.appointment-form {
+  display: flex;
+  justify-content: center; /* Horizontally center the form */
+  align-items: center;     /* Vertically center the form */
+  min-height: 100vh;       /* Full viewport height to ensure centering */
+  background: linear-gradient(to right, #e8f5e9, #c8e6c9); /* Smooth gradient background */
+  padding: 40px 20px;
+}
+
+.appointment-form .container {
+  max-width: 600px; /* Slightly wider max-width for better form appearance */
+  width: 100%;      /* Ensure container takes full width up to max-width */
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.appointment-form-title {
+  font-size: 2.5rem; /* Larger font size for the title */
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #2e7d32; /* Darker green for contrast */
+}
+
+.appointment-form form {
+  background: #ffffff; /* White background for the form */
+  padding: 25px;
+  border-radius: 12px; /* Slightly more rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* More pronounced shadow */
+  width: 100%; /* Ensure form uses full width within the container */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+  overflow: hidden; /* Prevent overflow of child elements */
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  font-size: 1rem;
+  color: #555;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+  overflow: hidden; /* Prevent overflow of content */
+}
+
+.form-control:focus {
+  border-color: #2e7d32; /* Green border on focus */
+  box-shadow: 0 0 5px rgba(46, 125, 50, 0.3); /* Green shadow on focus */
+  outline: none; /* Remove default focus outline */
+}
+
+.form-group-2 textarea {
+  resize: vertical; /* Allow vertical resize only */
+  min-height: 100px; /* Minimum height for textarea */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+  overflow: hidden; /* Prevent overflow of content */
+}
+
+/* Button styling */
+.btn-main {
+  background-color: #2e7d32; /* Green background for button */
+  color: white; /* White text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px; /* Fully rounded corners */
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+.btn-main:hover {
+  background-color: #1b5e20; /* Darker green on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.btn-main:active {
+  background-color: #1b5e20; /* Keep the darker green on click */
+  transform: translateY(0); /* Remove lift effect */
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+  background: #e8f5e9; /* Light green background for footer */
+}
+
+/* Form Section Styling */
+.appointment-form-section {
+  background: #ffffff; /* White background for the form section */
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+  overflow: hidden; /* Prevent any child elements from overflowing */
+}
+
+.appointment-form-section .title-color {
+  color: #00796b; /* Darker green for the title */
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.appointment-form .form-control {
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  padding: 15px;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+  overflow: hidden; /* Prevent overflow of content */
+}
+
+.appointment-form .form-control:focus {
+  border-color: #00796b; /* Highlight border color on focus */
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 121, 107, 0.3); /* Subtle shadow on focus */
+}
+
+.appointment-form .form-group-2 textarea {
+  resize: vertical; /* Allow vertical resize only */
+  min-height: 100px; /* Minimum height for textarea */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+  overflow: hidden; /* Prevent overflow of content */
+}
+
+/* Button Styling */
+.appointment-form .btn-main {
+  background: linear-gradient(135deg, #00796b, #004d40);
+  color: #fff;
+  border-radius: 25px;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+.appointment-form .btn-main i {
+  margin-left: 10px;
+}
+
+.appointment-form .btn-main:hover {
+  background: linear-gradient(135deg, #004d40, #00796b); /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.appointment-form .btn-main:focus {
+  outline: none;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+  .feature-item {
+    flex: 1 1 calc(50% - 20px); /* Two cards in a row for medium screens */
+  }
+
+  .counter-stat {
+    width: 45%;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .feature-item {
+    flex: 1 1 100%; /* Full width for small screens */
+  }
+
+  .counter-stat {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .hero h1 {
+    font-size: 2.5em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+}
+
+/* Add this CSS to ensure the map is properly displayed within its container */
+#map {
+  height: 500px;
+  width: 100%;
+  border: 1px solid #ddd; /* Optional: add a border to visually differentiate the map area */
+  border-radius: 8px; /* Optional: rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: shadow for better visibility */
+  margin: 20px 0; /* Optional: margin to separate from other content */
+}
+
+.map-section {
+  padding: 20px 0; /* Optional: Add padding */
+  position: relative;
+  margin-top: 100px;
+}
+
+/* Testimonials Section */
+/* Testimonials Section */
+/* Testimonials Section */
+.testimonials {
+  background: #f1f8e9; /* Light green background */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testimonials .section-title {
+  font-size: 2.5rem;
+  color: #00796b;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.testimonials-slider {
+  display: flex;
+  justify-content: center; /* Center the testimonials horizontally */
+  gap: 20px;
+  overflow-x: auto; /* Allow horizontal scrolling if needed */
+  scroll-snap-type: x mandatory;
+  padding: 20px 0;
+}
+
+.testimonial-item {
+  background: #ffffff; /* White background for testimonials */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  scroll-snap-align: center;
+  transition: transform 0.3s ease;
+  flex-shrink: 0; /* Prevent items from shrinking */
+}
+
+.testimonial-item:hover {
+  transform: scale(1.05);
+}
+
+.testimonial-icon {
+  font-size: 2rem;
+  color: #00796b;
+  margin-bottom: 10px;
+}
+
+.testimonial-text {
+  font-size: 1.2rem;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.testimonial-author {
+  font-size: 1rem;
+  color: #00796b;
+  font-style: italic;
+}
+
